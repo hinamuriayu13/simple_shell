@@ -4,7 +4,7 @@
  * _myenv - Prints the current environment.
  * @inf: a pointer to a structure (presumably containing information
  *          about the shell)
- * Return value: Always 0.
+ * Return: Always 0.
  */	
 int _myenv(info_t *inf)
 {
@@ -18,7 +18,7 @@ int _myenv(info_t *inf)
  *      about the shell)
  * @name: env variable name
  *
- * Return value: The value of the environment variable.
+ * Return: The value of the environment variable.
  */
 char *_getenv(info_t *inf, const char *name)
 {
@@ -40,7 +40,7 @@ char *_getenv(info_t *inf, const char *name)
  *             one.
  * @inf: a pointer to a structure (presumably containing information
  *        about the shell)
- *  Return value: Always 0.
+ *  Return Value: Always 0.
  */
 int _mysetenv(info_t *inf)
 {
@@ -58,7 +58,7 @@ int _mysetenv(info_t *inf)
  * _myunsetenv - Removes an environment variable.
  * @inf: a pointer to a structure (presumably containing information
  *        about the shell)
- * Return value: Always 0.
+ * Return: Always 0.
  */
 int _myunsetenv(info_t *inf)
 {
@@ -79,7 +79,7 @@ int _myunsetenv(info_t *inf)
  * populate_env_list - Populates the environment linked list.
  * @inf: a pointer to a structure (presumably containing information
  *          about the shell)
- * Return value: Always 0.
+ * Return: Always 0.
  */
 int populate_env_list(info_t *inf)
 {
