@@ -5,7 +5,7 @@
  * @inf: a pointer to a structure (presumably containing information
  *          about the shell)
  * Return: Always 0.
- */	
+ */
 int _myenv(info_t *inf)
 {
 	print_list_str(inf->env);
@@ -40,7 +40,7 @@ char *_getenv(info_t *inf, const char *name)
  *             one.
  * @inf: a pointer to a structure (presumably containing information
  *        about the shell)
- *  Return Value: Always 0.
+ *  Return: Always 0.
  */
 int _mysetenv(info_t *inf)
 {

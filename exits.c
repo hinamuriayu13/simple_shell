@@ -5,7 +5,7 @@
  * @dst: Pointer to the destination string.
  * @sr: Pointer to the source string.
  * @n: The maximum number of characters to be copied. *
- * Return value : A pointer to the destination string.
+ * Return: A pointer to the destination string.
  */
 char *_strncpy(char *dst, char *sr, int n)
 {
@@ -36,7 +36,7 @@ char *_strncpy(char *dst, char *sr, int n)
  * @sr: Pointer to the source string (the second string).
  * @n: The maximum number of bytes to be used for concatenation.
  *
- * Return value: A pointer to the concatenated string.
+ * Return: A pointer to the concatenated string.
  */
 char *_strncat(char *dst, char *sr, int n)
 {

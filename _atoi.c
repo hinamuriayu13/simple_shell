@@ -2,9 +2,10 @@
 
 /**
  * interactive - Checks if the shell is in interactive mode.
- * @inf: a pointer to a structure (presumably containing information about the shell)
+ * @inf: a pointer to a structure (presumably containing
+ * information about the shell)
  *
- * Return value: 1 if the shell is in interactive mode, 0 otherwise.
+ * Return: 1 if the shell is in interactive mode, 0 otherwise.
  */
 int interactive(info_t *inf)
 {
@@ -15,7 +16,7 @@ int interactive(info_t *inf)
  * is_delim - Checks if a char is a delimiter.
  * @c: The character to check
  * @delim: The delim string
- * Return value: 1 if the character is a delimiter, 0 otherwise.
+ * Return: 1 if the character is a delimiter, 0 otherwise.
  */
 int is_delim(char c, char *delim)
 {
@@ -28,7 +29,7 @@ int is_delim(char c, char *delim)
 /**
  * _isalpha - Checks if a character is alphabetic.
  * @c: The character to check
- * Return value: 1 if the character is alphabetic, 0 otherwise.
+ * Return: 1 if the character is alphabetic, 0 otherwise.
  */
 int _isalpha(int c)
 {
@@ -41,7 +42,8 @@ int _isalpha(int c)
 /**
  * _atoi - Converts a string to an int.
  * @s: The string we want to convert
- * Return value: The converted number if there are numbers in the string, 0 otherwise.
+ * Return: The converted number if there are numbers
+ * in the string, 0 otherwise.
  */
 int _atoi(char *s)
 {

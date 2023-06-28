@@ -3,10 +3,10 @@
 /**
  * _erratoi - Converts a string to an integer.
  * @s: The string to convert.
- * Return Value: If there are no numbers in the string, it returns 0.
+ * Return: If there are no numbers in the string, it returns 0.
  *       If the conversion is successful, it returns the converted number.
- *        If an error occurs during conversion, it returns -1.
- */	
+ * If an error occurs during conversion, it returns -1.
+ */
 int _erratoi(char *s)
 {
 	int i = 0;
@@ -52,7 +52,7 @@ void print_error(info_t *inf, char *estr)
  * @input: The input number to be printed.
  * @fdesc: The file descriptor to write to.
  *
- * Return Value: The number of characters printed.
+ * Return: The number of characters printed.
  */
 int print_d(int input, int fdesc)
 {
@@ -92,7 +92,7 @@ int print_d(int input, int fdesc)
  * @base: The base for the conversion.
  * @flags: Argument flags.
  *
- * Return Value: A string representation of the converted number.
+ * Return: A string representation of the converted number.
  */
 char *convert_number(long int num, int base, int flags)
 {
@@ -126,7 +126,7 @@ char *convert_number(long int num, int base, int flags)
  * remove_comments - Replaces the first instance of '#' with '\0' in a string.
  * @buff: Address of the string to be modified.
  *
- * Return Value: None.
+ * Return: None.
  */
 void remove_comments(char *buff)
 {

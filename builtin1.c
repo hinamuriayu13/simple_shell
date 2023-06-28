@@ -1,11 +1,10 @@
 #include "shell.h"
 
 /**
- * _myhistory - Displays the history list, one command per line, preceded by
- *              line numbers starting at 0.
- * @inf: a pointer to a structure (presumably containing information
- *        constant function prototype.
- *  Return value: Always 0.
+ * _myhistory - displays the history list, one command by line, preceded
+ *              with line numbers, starting at 0.
+ * @inf:Pointer to a  structure containing potential arguments.
+ *  Return: Always 0
  */
 int _myhistory(info_t *inf)
 {
@@ -14,11 +13,12 @@ int _myhistory(info_t *inf)
 }
 
 /**
- * unset_alias - Sets an alias to a string.
- * @inf: a pointer to a structure
- * @str: The string alias
+ * unset_alias - sets alias to string
+ * @inf: Pointer to a  structure
+ * @str: the string alias
  *
- * Return value: 0 on success, 1 on error. */
+ * Return: Always 0 on success, 1 on error
+ */
 int unset_alias(info_t *inf, char *str)
 {
 	char *p, c;
@@ -36,11 +36,11 @@ int unset_alias(info_t *inf, char *str)
 }
 
 /**
- * set_alias - Sets an alias to a string.
- * @inf: a pointer to a structure
- * @str: The string alias
+ * set_alias - sets alias to string
+ * @inf: Pointer to a  structure
+ * @str: the string alias
  *
- * Return value: Always 0 on success, 1 on error.
+ * Return: Always 0 on success, 1 on error
  */
 int set_alias(info_t *inf, char *str)
 {
@@ -57,10 +57,10 @@ int set_alias(info_t *inf, char *str)
 }
 
 /**
- * print_alias - Prints an alias string.
- * @node: The alias node
+ * print_alias - prints an alias string
+ * @node: the alias node
  *
- * Return value: 0 on success, 1 on error.
+ * Return: Always 0 on success, 1 on error
  */
 int print_alias(list_t *node)
 {
@@ -80,10 +80,10 @@ int print_alias(list_t *node)
 }
 
 /**
- * _myalias - Mimics the alias builtin command
- * @inf: a pointer to a structure (presumably containing information 
- *          about the shell)
- *  Return value: Always 0.
+ * _myalias - mimics the alias builtin (man alias)
+ * @inf: Structure containing potential arguments. Used to maintain
+ *          constant function prototype.
+ *  Return: Always 0
  */
 int _myalias(info_t *inf)
 {

@@ -5,7 +5,7 @@
  *    if an illegal number is provided as an argument.
  * @inf: a pointer to a structure (presumably containing information
  *        about the shell)
- * Return value: If inf->argv[0] != "exit", it exits with 0.
+ * Return: If inf->argv[0] != "exit", it exits with 0.
  *         If there is an exit argument and it is a valid number, it returns -2.
  *        If there is an exit argument and it is an illegal number, it returns 1 and
  *         sets inf->status and inf->err_num accordingly.
@@ -36,7 +36,7 @@ int _myexit(info_t *inf)
 /**
  * _mycd - Changes the current directory of the process.
  * @inf: a pointer to a structure (presumably containing information about the shell).
- * Return value: Always 0.
+ * Return: Always 0.
  */
 int _mycd(info_t *inf)
 {
@@ -87,7 +87,7 @@ int _mycd(info_t *inf)
  *      the function itself is not implemented yet).
  * @inf: a pointer to a structure (presumably containing information
  *        about the shell)
- * Return value: Always 0.
+ * Return: Always 0.
  */
 int _myhelp(info_t *inf)
 {
