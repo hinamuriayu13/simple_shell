@@ -89,7 +89,7 @@ int read_history(info_t *inf)
 		if (buff[a] == '\n')
 		{
 			buff[a] = 0;
-			build_history_list(inf, buff + last, lineco++);
+			build_history_list(inf, buff + lastt, lineco++);
 			lastt = a + 1;
 		}
 	if (lastt != a)
